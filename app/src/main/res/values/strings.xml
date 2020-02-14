@@ -1,0 +1,32 @@
+<!DOCTYPE resources [<!ENTITY encrypt "encrypt">]>
+
+<resources>
+    <string name="app_name">Encrypt.io</string>
+    <!--    <string name="encryption">&encrypt;</string>-->
+    <!--    <string name="decryption">&decrypt;</string>-->
+    <string name="instruction">ENTER MESSAGE TO ENCRYPT </string>
+    <string name="instruction_decrypt">ENTER MESSAGE TO DECRYPT</string>
+    <string name="post_instruction">ENCRYPTED MESSAGE</string>
+    <string name="post_instruction_decrypt">DECRYPTED MESSAGE</string>
+    <string name="example">This is just an example of a really long message that I need to see if itll rap aronud the box like I entend for it to do.</string>
+    <string name="choice1">WOULD YOU LIKE TO ENCRYPT or DECRYPT </string>
+    <string name="choice2">CHOOSE A METHOD</string>
+    <string name="title_affine">AFFINE CIPHER</string>
+    <string name="title_rails">RAIL FENCE CIPHER</string>
+    <string name="alpha">ENTER α and β VALUES</string>
+    <string name="rail_n">ENTER A VALUE FOR n</string>
+    <string name="intro_1">Welcome to Encrypt.io</string>
+    <string name="intro_2">Encrypt.io was created to show the process of encryption as well as decryption</string>
+    <string name="affine_explanation">THEORY \n \n The Affine cipher is a type of monoalphabetic substitution cipher,
+        wherein each letter in an alphabet is mapped to its numeric equivalent,
+        encrypted using a simple mathematical function, and converted back to a letter.
+        The whole process relies on working modulo m (the length of the alphabet used).
+             E(x)=(ax+b)mod m \n For decryption, the equation is \n D(x)=a^{-1}(x-b)mod m</string>
+    <string name="rail_explanation">THEORY\n \n The Rail fence cipher is a form
+        of transposition cipher. It derives its name from the way in which it is encoded. In the rail
+        fence cipher, the plain text is written downwards and diagonally on successive "rails" of an
+        imaginary fence, then moving up when the bottom rail is reached. When the top rail is reached,
+        the message is written downwards again until the whole plaintext is written out. The message is then read off in rows.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

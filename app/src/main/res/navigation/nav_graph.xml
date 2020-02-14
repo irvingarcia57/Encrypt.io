@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/intro_frag">
+
+    <fragment
+        android:id="@+id/intro_frag"
+        android:name="com.example.project_1.Intro_frag"
+        android:label="fragment_intro_frag"
+        tools:layout="@layout/fragment_intro_frag" >
+        <action
+            android:id="@+id/action_intro_frag_to_decider_frag"
+            app:destination="@id/decider_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/decider_frag"
+        android:name="com.example.project_1.Decider_frag"
+        android:label="Decider_frag" >
+
+        <action
+            android:id="@+id/action_decider_frag_to_encryptRailFragment"
+            app:destination="@id/encryptRailFragment" />
+        <action
+            android:id="@+id/action_decider_frag_to_decryptRailFragment"
+            app:destination="@id/decryptRailFragment" />
+        <action
+            android:id="@+id/action_decider_frag_to_encryptAffineFragment"
+            app:destination="@id/encryptAffineFragment" />
+        <action
+            android:id="@+id/action_decider_frag_to_decryptAffineFragment"
+            app:destination="@id/decryptAffineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/encryptRailFragment"
+        android:name="com.example.project_1.EncryptRailFragment"
+        android:label="EncryptRailFragment" />
+    <fragment
+        android:id="@+id/decryptRailFragment"
+        android:name="com.example.project_1.DecryptRailFragment"
+        android:label="DecryptRailFragment" />
+    <fragment
+        android:id="@+id/encryptAffineFragment"
+        android:name="com.example.project_1.EncryptAffineFragment"
+        android:label="EncryptAffineFragment" />
+    <fragment
+        android:id="@+id/decryptAffineFragment"
+        android:name="com.example.project_1.DecryptAffineFragment"
+        android:label="DecryptAffineFragment" />
+</navigation>
